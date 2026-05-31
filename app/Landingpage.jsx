@@ -12,7 +12,7 @@ const LandingPage = () => {
     setStatus('loading');
 
     try {
-      await fetch('YOUR_FORM_ENDPOINT_URL', {
+      await fetch('https://formspree.io/f/mredvryj', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, signedUpAt: new Date().toISOString() })
